@@ -1,0 +1,520 @@
+@font-face {
+  font-family: TextoN;
+  src: url("SfDistantGalaxy-0l3d.ttf")
+}
+
+body{
+font-family: TextoN
+
+}
+
+a{
+font-family: TextoN;
+
+}
+
+body {
+  background-image: url(.././img/Fondo2.gif);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+h1 {
+margin-bottom: 100px;
+}
+
+
+.image-row {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.image-container {
+margin: 10px;
+}
+
+.image-container img {
+max-width: 400px;
+height: auto;
+}
+
+
+
+:root {
+font-size: 16px;
+font-family: 'Open Sans';
+--text-primary: #b6b6b6;
+--text-secondary: #ececec;
+--bg-primary: #23232e;
+--bg-secondary: #141418;
+--transition-speed: 600ms;
+}
+
+body {
+color: black;
+background-color: white;
+margin: 0;
+padding: 0;
+}
+
+
+
+
+
+.navbar {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 175px;
+}
+
+.navbar-logo {
+  width: 175px;
+  height: 75px;
+  margin: 15px auto;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-links li {
+  margin: 0 75px;
+}
+
+.navbar-links li a {
+  color: #b5b7b7;
+  text-decoration: none;
+  position: relative; 
+  display: inline-block; 
+  font-size: 150%;
+}
+
+.navbar-links li a:hover {
+  color: rgb(246, 236, 125);
+}
+
+
+.navbar-links li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; 
+  width: 100%;
+  height: 2px;
+  background-color: rgb(240, 223, 42); 
+  transform: scaleX(0); 
+  transition: transform 0.3s ease-in-out; 
+  
+}
+
+.navbar-links li a:hover::after {
+  transform: scaleX(1); 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.custom-image-container img {
+  width: 500px; 
+  height: auto;
+}
+
+.custom-content-container {
+  margin-left: 60px;
+}
+
+.subtitulo {
+    font-size: 40px;
+    color: #FFD700;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 60px; 
+}
+
+.subtitulo::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -10px;
+    right: 0px;
+    bottom: -2px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    pointer-events: none;
+    transition: border-color 0.3s;
+}
+
+.subtitulo:hover::after {
+    border-color: #FFD700;
+    box-shadow: 0 0 5px #FFD700;
+}
+
+p {
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: rgb(249, 255, 223);
+}
+
+
+
+
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none; 
+}
+
+
+.modal-toggle:checked + #modal {
+  display: block;
+}
+
+
+.modal-toggle:checked + #modal .close-button {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  max-width: 400px;
+}
+
+
+
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+input[type="checkbox"]:checked + .popup {
+  display: block;
+}
+
+
+.gallery-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+.image-container {
+  width: calc(25% - 10px); 
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+.title-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+img {
+  width: 250px; 
+  height: 200px; 
+}
+
+
+
+
+
+
+
+
+
+
+body::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #fae51f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.star-wars-title {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 3rem;
+  color: #FFD700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  display: inline-block; 
+}
+
+.star-wars-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  pointer-events: none;
+  transition: border-color 0.3s;
+}
+
+.star-wars-title:hover::after {
+  border-color: #FFD700;
+  box-shadow: 0 0 5px #FFD700;
+}
+
+
+
+
+
+
+
+
+.star-wars-title1 {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 3rem;
+  color: #FFD700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  display: center; 
+}
+
+.star-wars-title1::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  right: 1px;
+  bottom: 0px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  pointer-events: none;
+  transition: border-color 0.3s;
+}
+
+.star-wars-title1:hover::after {
+  border-color: #FFD700;
+  box-shadow: 0 0 5px #FFD700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease; 
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+.custom-image-container img {
+
+  transition: transform 0.3s ease; 
+}
+
+.custom-image-container:hover img {
+  transform: scale(1.1); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; 
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: azure;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-container {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transform: translateX(var(--slide-transform));
+  transition: var(--transition);
+}
+
+.slider__element {
+  min-width: 100%;
+  height: 600px;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 300px;
+  
+}
+
+
+
+.slider-buttons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  background: none;
+  border: none;
+  background-color: #101010;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  color: #FFD700;
+}
+
+.button:active {
+  transform: scale(1.1);
+}
